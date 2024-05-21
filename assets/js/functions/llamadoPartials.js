@@ -5,7 +5,7 @@ function cargarNavbar() {
     fetch('../../../partials/estructuraBasica/navbar.html')
         .then(response => response.text())
         .then(data => {
-            // Insertar el contenido del encabezado en el elemento con el id "header-container"
+            // Insertar el contenido del encabezado en el elemento con el id "navbar-container"
             document.getElementById('navbar-container').innerHTML = data;
         })
         .catch(error => console.error('Error al cargar la barra de navegacion:', error));
@@ -13,7 +13,7 @@ function cargarNavbar() {
 
 // Llama a la función para cargar el encabezado cuando la página esté lista
 document.addEventListener('DOMContentLoaded', cargarNavbar);
-//para llamar el partials <header id="navbar-container"></header>
+//para llamar el partials <nav id="navbar-container"></nav>
 
 
 function cargarFiltros(){
