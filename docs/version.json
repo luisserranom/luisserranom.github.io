@@ -1,0 +1,36 @@
+{
+    "proyecto": "Mi Proyecto",
+    "version": "1.0.0",
+    "descripcion": "Una descripción breve del proyecto",
+    "autores": [
+      "Nombre del Autor 1",
+      "Nombre del Autor 2",
+      "Nombre del Autor 3"
+    ],
+    "fecha_lanzamiento": "2024-04-30",
+    "historial_versiones": [
+      {
+        "version": "1.0.0",
+        "fecha": "2024-04-30",
+        "cambios": [
+          "Primer lanzamiento del proyecto",
+          "Agregadas características A, B y C"
+        ]
+      },
+      {
+        "version": "0.9.0",
+        "fecha": "2024-04-15",
+        "cambios": [
+          "Implementación inicial del proyecto",
+          "Agregada característica X",
+          "Corrección de errores menores"
+        ]
+      }
+    ],
+    "tecnologias": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React.js"
+    ]
+  }
