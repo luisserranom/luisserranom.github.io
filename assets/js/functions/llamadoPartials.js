@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', cargarNavbar);
 
 
 function cargarFiltros(){
-    fetch("../../../partials/secciones/filtroProyecto.html")
+    fetch("../../../partials/secciones/index/filtroProyecto.html")
     .then(response => response.text())
     .then(data => {
         document.getElementById('filtros-container').innerHTML = data;
@@ -25,3 +25,87 @@ function cargarFiltros(){
         .catch(error => console.error('Error al cargar los filtros:', error));
 }
 document.addEventListener('DOMContentLoaded', cargarFiltros);
+
+
+function cargarSobreMi(){
+    fetch('../../../partials/secciones/index/sobreMi.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('sobreMi-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el sobre mi:', error));
+}
+document.addEventListener('DOMContentLoaded',cargarSobreMi);
+
+function cargarTextoDinamico(){
+
+    fetch('../../../partials/secciones/index/textoDinamico.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('textoDinamico-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar texto dinamico:', error));
+}
+
+document.addEventListener('DOMContentLoaded',cargarTextoDinamico);
+
+function cargarMiLinksSociales(){
+
+    fetch('../../../partials/secciones/index/linksSociales.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('miLinksSociales-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar iconos de redes sociales:', error));
+}
+
+document.addEventListener('DOMContentLoaded',cargarMiLinksSociales);
+
+
+function cargarCategorias(){
+    
+    fetch('../../../partials/secciones/index/categoria.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('categoria-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar categoria:', error));
+}
+
+document.addEventListener('DOMContentLoaded',cargarCategorias);
+
+
+function cargarProyecto1(){
+
+    fetch('../../../partials/secciones/proyectos/proyecto1.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('proyecyo1-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar proyecto1:', error));
+    
+}
+
+document.addEventListener('DOMContentLoaded',cargarProyecto1);
+
+
+
+function cargarIconosFooter(){
+    fetch('../../../partials/secciones/index/iconosFooter.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('iconosFooter-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar los iconos footer:', error));
+    
+}
+
+document.addEventListener('DOMContentLoaded',cargarIconosFooter);
+
+
