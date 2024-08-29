@@ -109,3 +109,44 @@ function cargarIconosFooter(){
 document.addEventListener('DOMContentLoaded',cargarIconosFooter);
 
 
+//llamado a carrusel 
+
+function cargarCarrusel1(){
+    fetch('../../../partials/secciones/index/carrusel1.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('carrusel-mis-conocimientos').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el carrusel1:', error));
+    
+}
+
+document.addEventListener('DOMContentLoaded',cargarCarrusel1);
+
+
+function cargarCarrusel2(){
+    fetch('../../../partials/secciones/index/carrusel2.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('carrusel-mis-estudio').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el carrusel2:', error));
+    
+}
+
+document.addEventListener('DOMContentLoaded',cargarCarrusel2);
+
+function cargarCarrusel3(){
+    fetch('../../../partials/secciones/index/carrusel3.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('carrusel-a-futuro').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el carrusel3:', error));
+    
+}
+
+document.addEventListener('DOMContentLoaded',cargarCarrusel3);

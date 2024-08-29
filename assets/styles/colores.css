@@ -1,1 +1,13 @@
 /*aqui se crearan las variables para los colores*/
+:root{
+    --color-principal: #0c192c;
+    --color-secundario:#d11355;
+    --color-terciario: #1e3c68;
+    --color-letras:azure;
+}
+
+
+/*  #213757 
+    #1a3257
+    #1e3c68
+*/

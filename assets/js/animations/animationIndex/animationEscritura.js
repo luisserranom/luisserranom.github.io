@@ -1,10 +1,9 @@
 let phrases = [
-    "Fanatico del diseño",
-    "Fanatico de aprender",
+    "#FanaticoDelDiseñoUX/UI",
+    "#FanaticoDeAprender",
     "#sinJuniorNoHaySenior",
-    "Divertido",
-    "I love Burgers",
-    "atun."
+    "#DeJuniorASenior",
+    "#AprenderParaCrecer"
   ];
 
   function getRandomPhrase() {

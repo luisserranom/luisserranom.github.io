@@ -1,0 +1,101 @@
+@import url(colores.css);
+.card-custom {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 33%;
+    /* background-color: var(--color-terciario); */
+    background-color: var(--color-secundario);
+   /*  margin: auto; */
+  }
+
+ 
+  .icon-section {
+    text-align: center;
+    padding: 10px;
+  }
+  .icon-section i {
+    font-size: 1.5rem;
+    color: var(--color-terciario);
+    margin: 0 10px;
+  }
+  .btn-section {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .btn-section .btn {
+    margin: 5px;
+    background-color: var(--color-terciario);
+    color: azure;
+  }
+
+  .custom-button-color {
+      color: var(--color-terciario); /* Cambia esto por el color que prefieras */
+  }
+
+ 
+
+  .description-section {
+    padding: 15px;
+    max-height: 155px;
+    overflow: hidden;
+    position: relative;
+    color: azure;
+    
+  }
+  .description-section p {
+    margin: 0;
+    color: azure;
+  }
+  .read-more {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Estilos para el modal más grande */
+ .modal-content{
+  color: var(--color-letras);
+  background-color: var(--color-secundario);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+
+ }
+
+ .modal-content i{
+  color: var(--color-terciario);
+  font-size: 160%;
+  margin: 1%;
+  margin-top: 3%;
+
+  
+ }
+  .modal-dialog {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+
+  /* Estilos para la X roja */
+  .modal-header .btn-close {
+    border-radius: 50%;
+  }
+  .modal-header .btn-close:hover {
+    background-color:var(--color-terciario);
+  }
+
+  .modal-footer .btn{
+    background-color: var(--color-terciario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-letras);
+    width: 15%;
+    gap: 4%;
+    height: 3rem;
+  }
+
+  .modal-footer i{
+    color: var(--color-letras);
+    
+  }

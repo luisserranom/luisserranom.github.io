@@ -1,0 +1,937 @@
+@import url("../../static/css/normalize.css");
+@import url("comunes.css");
+
+
+
+/* Media query para dispositivos muy pequeños (menos de 320px) */
+
+    /* Estilos para dispositivos muy pequeños */
+body {
+font-size: 14px;
+display: grid;
+/* gap: 0.1px; */
+
+
+grid-template: 
+    "navbar" 
+    "imagenPerfil"
+    "textoDinamico"
+    "sobreMi"  
+    "linksSociales"  
+    "categorias" 
+    "filtros" 
+    "projectos" 
+    "footer";
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 
+    50PX /*navbar*/
+    auto /*imagenPerfil*/
+    auto /*textoDinamico*/
+    auto /*sobreMi*/
+    auto /*linksSociales*/
+    auto /*categorias*/
+    auto /*filtros*/
+    auto /*projectos*/
+    100px /*footer*/
+    
+    ;
+}
+/*Inicio Nav*/
+.navbar {
+    grid-area: navbar;
+    background-color: rgb(255, 145, 0);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar-container {
+    background-color: blue;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__nav {
+    background-color: blueviolet;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+
+#navbar-container{
+    background-color: blue;
+}
+.navbar__nav{
+    background-color: blueviolet;
+}
+
+.navbar-brand img{
+    width: 6vb;
+    height: 6vb;
+    object-fit: cover;
+}
+/*Fin Nav*/
+
+/*Inicio SobreMi*/
+.main__sobreMi{
+    grid-area:sobreMi;
+    background-color: aqua;
+}
+
+.main__sobreMi-textos{
+    display: flex;
+    justify-items:  center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__sobreMi-textos p{
+    justify-items:  center;
+    align-content: center;
+    margin-left: 3vb;
+    margin-right: 3vb ;
+    
+}
+
+/*Fin SobreMi*/
+
+/*Inicio seccion imagen perfil*/
+.main__imagenPerfil{
+    grid-area:imagenPerfil;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.imagen-perfil__header-image{
+    width: 22vb;
+    height: 22vb;
+    margin: 3vb;
+    object-fit: cover;
+}
+
+/*Fin seccion imagen perfil*/
+
+/*Inicio Iconos de links sociales*/
+.main__linksSociales{
+    grid-area:linksSociales;
+    background-color:blue ;
+}
+
+.main__linksSociales__iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.main__linksSociales__iconos i {
+    font-size: 5vb;
+    margin: 3vb;
+
+}
+
+.main__linksSociales__iconos img {
+    margin: 2vb;
+    object-fit: cover;
+}
+/*Fin Iconos de links sociales*/
+
+/*Inicio texto dinamico*/
+.main__textoDinamico{
+    grid-area: textoDinamico;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main__textoDinamico p {
+    margin-top: 1.5vb;
+    
+}
+
+/*Fin texto dinamico*/
+/*Inicio de categoria*/
+.main__categorias{
+    grid-area: categorias;
+    background-color: brown;
+}
+
+
+
+/*Fin de Categoria*/
+/*inicio animacion categoria*/
+.multi-select-container {
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+}
+.multi-select-dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.multi-select-dropdown.show {
+    display: block;
+}
+.multi-select-option {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.multi-select-option:hover, .multi-select-option.selected {
+    background-color: #007bff;
+    color: white;
+}
+.multi-select-option:last-child {
+    border-bottom: none;
+}
+.check-icon {
+    display: none;
+}
+.multi-select-option.selected .check-icon {
+    display: inline-block;
+}
+/*Fin animacion categoria*/
+
+
+.main__filtros{
+    grid-area:filtros;
+    background-color: green;
+    /* display: none; */
+}
+
+/*Inicio Animacion de filtros*/
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    flex-direction: row;
+}
+
+.filter-option {
+    padding: 10px 15px;
+    background-color: lightblue;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+    animation: moveClouds 5s linear infinite;
+    width: 30vb;
+} 
+.filter-option.active {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.filter-select {
+    display: none;
+}
+
+/* Inicio de carta*/
+.col-lg-4{
+    display: flex;
+    justify-content: center;
+    gap: 5vb;
+    margin-bottom: 4vb;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 95%;
+
+}
+
+.flex-container-logoT{
+    display: flex;
+    flex-direction: row;
+    gap: 2vb;
+    justify-content: start;
+}
+/*Fin de carta*/
+
+@media (max-width: 600px) {
+    .filter-container {
+        display: none;
+    }
+    .filter-select {
+        display: block;
+    }
+} 
+
+@keyframes moveClouds {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+/*Fin animacion filtros*/
+
+.main__projectos{
+    grid-area:projectos;
+    background-color: orangered;
+}
+
+.footer{
+    grid-area: footer;
+    background-color:yellow ;
+}
+
+.footer__carruselLogo{
+    grid-area:carruselLogo;
+    background-color: pink ;
+}
+
+
+
+
+
+  
+  /* Media query para dispositivos móviles pequeños (320px a 479px) */
+  @media (min-width: 321px) and (max-width: 479px) {
+    /* Estilos para móviles pequeños */
+
+    body {
+        font-size: 16px;
+      background-color: greenyellow;
+        display: grid;
+        /* gap: 0.1px; */
+        
+        
+        grid-template: 
+            "navbar" 
+            "imagenPerfil"
+            "linksSociales" 
+            "sobreMi"  
+            "textoDinamico" 
+            "categorias" 
+            "filtros" 
+            "projectos" 
+            "footer";
+            grid-template-columns: repeat(1fr);
+            grid-template-rows: 
+            50PX /*navbar*/
+            auto /*imagenPerfil*/
+            auto /*linksSociales*/
+            auto /*sobreMi*/
+            auto /*textoDinamico*/
+            auto /*categorias*/
+            auto /*filtros*/
+            auto /*projectos*/
+            100px /*footer*/
+            
+            ;
+        }
+        .navbar{
+            grid-area:navbar;
+            background-color: antiquewhite;
+            
+        }
+        
+        .main__sobreMi{
+            grid-area:sobreMi;
+            background-color: aqua;
+        }
+        
+        .main__imagenPerfil{
+            grid-area:imagenPerfil;
+            background-color: black;
+        }
+        
+        .main__linksSociales{
+            grid-area:linksSociales;
+            background-color:blue ;
+        }
+        
+        .main__textoDinamico{
+            grid-area: textoDinamico;
+            background-color: blueviolet;
+        }
+        
+        .main__categorias{
+            grid-area: categorias;
+            background-color: brown;
+        }
+        
+        .main__filtros{
+            grid-area:filtros;
+            background-color: green;
+        }
+        
+        .main__projectos{
+            grid-area:projectos;
+            background-color: orangered;
+        }
+        
+        .footer{
+            grid-area: footer;
+            background-color:yellow ;
+        }
+        
+        .footer__carruselLogo{
+            grid-area:carruselLogo;
+            background-color: pink ;
+        }
+  }
+  
+  /* Media query para móviles estándar (480px a 599px) */
+  @media (min-width: 480px) and (max-width: 599px) {
+    /* Estilos para móviles estándar */
+  
+
+    body {
+        font-size: 18px;
+        background-color:black;
+        display: grid;
+        /* gap: 0.1px; */
+        
+        
+        grid-template: 
+            "navbar" 
+            "imagenPerfil"
+            "linksSociales" 
+            "sobreMi"  
+            "textoDinamico" 
+            "categorias" 
+            "filtros" 
+            "projectos" 
+            "footer";
+            grid-template-columns: repeat(1fr);
+            grid-template-rows: 
+            50PX /*navbar*/
+            auto /*imagenPerfil*/
+            auto /*linksSociales*/
+            auto /*sobreMi*/
+            auto /*textoDinamico*/
+            auto /*categorias*/
+            auto /*filtros*/
+            auto /*projectos*/
+            100px /*footer*/
+            
+            ;
+        }
+        .navbar {
+            grid-area: navbar;
+            background-color: rgb(99, 56, 1);
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+     
+    
+        
+        .main__sobreMi{
+            grid-area:sobreMi;
+            background-color: aqua;
+        }
+        
+        .main__imagenPerfil{
+            grid-area:imagenPerfil;
+            background-color: black;
+        }
+        
+        .main__linksSociales{
+            grid-area:linksSociales;
+            background-color:blue ;
+        }
+        
+        .main__textoDinamico{
+            grid-area: textoDinamico;
+            background-color: blueviolet;
+        }
+        
+        .main__categorias{
+            grid-area: categorias;
+            background-color: brown;
+        }
+        
+        .main__filtros{
+            grid-area:filtros;
+            background-color: green;
+        }
+        
+        .main__projectos{
+            grid-area:projectos;
+            background-color: orangered;
+        }
+        
+        .footer{
+            grid-area: footer;
+            background-color:yellow ;
+        }
+        
+        .footer__carruselLogo{
+            grid-area:carruselLogo;
+            background-color: pink ;
+        }
+
+    
+  }
+  
+  /* Media query para tablets (600px a 767px) */
+  @media (min-width: 600px) and (max-width: 767px) {
+    /* Estilos para tablets */
+    
+
+    body {
+    font-size: 20px;
+        background-color:blue;
+        display: grid;
+        /* gap: 0.1px; */
+        
+        
+        grid-template: 
+            "navbar navbar navbar navbar navbar " 
+            "sobreMi sobreMi sobreMi imagenPerfil imagenPerfil"
+            "linksSociales linksSociales linksSociales linksSociales linksSociales" 
+            "textoDinamico textoDinamico textoDinamico textoDinamico textoDinamico" 
+            "categorias categorias categorias categorias categorias" 
+            "filtros filtros filtros filtros filtros " 
+            "projectos projectos projectos projectos projectos" 
+            "footer footer footer footer footer";
+            grid-template-columns: repeat(5,0.2fr);
+            grid-template-rows: 
+            50px /*navbar*/
+            auto /*sobreMi*/ /*imagenPerfil*/
+            auto /*linksSociales*/
+            auto /*textoDinamico*/
+            auto /*categorias*/
+            auto /*filtros*/
+            auto /*projectos*/
+            100px /*footer*/;
+        }
+        .navbar{
+            grid-area:navbar;
+            background-color: antiquewhite;
+            /* grid-column: 1/6;
+            grid-row: auto; */
+            
+
+            
+        }
+      
+        .main__sobreMi{
+            grid-area:sobreMi;
+            background-color: aqua;
+            /* grid-column: 1/4;
+            grid-row: 2/3; */
+            width: 350px;
+            
+        }
+        
+        .main__imagenPerfil{
+            grid-area:imagenPerfil;
+            background-color: black;
+            width: 3500px;
+        }
+        
+        .main__linksSociales{
+            grid-area:linksSociales;
+            background-color:blue ;
+        }
+        
+        .main__textoDinamico{
+            grid-area: textoDinamico;
+            background-color: blueviolet;
+        }
+        
+        .main__categorias{
+            grid-area: categorias;
+            background-color: brown;
+        }
+        
+        .main__filtros{
+            grid-area:filtros;
+            background-color: green;
+        }
+        
+        .main__projectos{
+            grid-area:projectos;
+            background-color: orangered;
+        }
+        
+        .footer{
+            grid-area: footer;
+            background-color:yellow ;
+        }
+        
+        .footer__carruselLogo{
+            grid-area:carruselLogo;
+            background-color: pink ;
+        }
+        
+        
+    
+  }
+  
+  /* Media query para pantallas pequeñas de escritorio (768px a 959px) */
+  @media (min-width: 768px) and (max-width: 959px) {
+   
+    body {
+        font-size: 22px;
+        background-color:blueviolet;
+        display: grid;
+        /* gap: 0.1px; */
+            
+            
+        grid-template: 
+            "navbar navbar navbar navbar navbar " 
+            "sobreMi sobreMi sobreMi imagenPerfil imagenPerfil"
+            "linksSociales linksSociales linksSociales linksSociales linksSociales" 
+            "textoDinamico textoDinamico textoDinamico textoDinamico textoDinamico" 
+            "categorias categorias categorias categorias categorias" 
+            "filtros filtros filtros filtros filtros " 
+            "projectos projectos projectos projectos projectos" 
+            "footer footer footer footer footer";
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 
+            50px /*navbar*/
+            auto /*sobreMi*/ /*imagenPerfil*/
+            auto /*linksSociales*/
+            auto /*textoDinamico*/
+            auto /*categorias*/
+            auto /*filtros*/
+            auto /*projectos*/
+            100px /*footer*/;
+        }
+        .navbar{
+            grid-area:navbar;
+            background-color: antiquewhite;
+            
+            
+
+            
+        }
+        
+        .main__sobreMi{
+            grid-area:sobreMi;
+            background-color: aqua;
+            width: 450px;
+            
+        }
+        
+        .main__imagenPerfil{
+            grid-area:imagenPerfil;
+            background-color: black;
+            width: 450px;
+        }
+        
+        .main__linksSociales{
+            grid-area:linksSociales;
+            background-color:blue ;
+        }
+        
+        .main__textoDinamico{
+            grid-area: textoDinamico;
+            background-color: blueviolet;
+        }
+        
+        .main__categorias{
+            grid-area: categorias;
+            background-color: brown;
+        }
+        
+        .main__filtros{
+            grid-area:filtros;
+            background-color: green;
+        }
+        
+        .main__projectos{
+            grid-area:projectos;
+            background-color: orangered;
+        }
+        
+        .footer{
+            grid-area: footer;
+            background-color:yellow ;
+        }
+        
+        .footer__carruselLogo{
+            grid-area:carruselLogo;
+            background-color: pink ;
+        }
+  }
+  
+  /* Media query para pantallas medianas de escritorio (960px a 1199px) */
+  @media (min-width: 960px) and (max-width: 1199px) {
+    /* Estilos para pantallas medianas de escritorio */
+    
+
+    body {
+        font-size: 24px;
+        background-color:brown;
+        display: grid;
+        /* gap: 0.1px; */
+        grid-template: 
+            "navbar navbar navbar navbar navbar " 
+            "sobreMi sobreMi sobreMi imagenPerfil imagenPerfil"
+            "linksSociales linksSociales linksSociales linksSociales linksSociales" 
+            "textoDinamico textoDinamico textoDinamico textoDinamico textoDinamico" 
+            "categorias categorias categorias categorias categorias" 
+            "filtros filtros filtros filtros filtros " 
+            "projectos projectos projectos projectos projectos" 
+            "footer footer footer footer footer";
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 
+            50px /*navbar*/
+            auto /*sobreMi*/ /*imagenPerfil*/
+            auto /*linksSociales*/
+            auto /*textoDinamico*/
+            auto /*categorias*/
+            auto /*filtros*/
+            auto /*projectos*/
+            100px /*footer*/;
+        }
+        .navbar{
+            grid-area:navbar;
+            background-color: antiquewhite;
+            
+            
+
+            
+        }
+        
+        .main__sobreMi{
+            grid-area:sobreMi;
+            background-color: aqua;
+            width: 579px;
+            
+        }
+        
+        .main__imagenPerfil{
+            grid-area:imagenPerfil;
+            background-color: black;
+            width: 500px;
+        }
+        
+        .main__linksSociales{
+            grid-area:linksSociales;
+            background-color:blue ;
+        }
+        
+        .main__textoDinamico{
+            grid-area: textoDinamico;
+            background-color: blueviolet;
+        }
+        
+        .main__categorias{
+            grid-area: categorias;
+            background-color: brown;
+        }
+        
+        .main__filtros{
+            grid-area:filtros;
+            background-color: green;
+        }
+        
+        .main__projectos{
+            grid-area:projectos;
+            background-color: orangered;
+        }
+        
+        .footer{
+            grid-area: footer;
+            background-color:yellow ;
+        }
+        
+        .footer__carruselLogo{
+            grid-area:carruselLogo;
+            background-color: pink ;
+        }
+  }
+  
+  /* Media query para pantallas grandes de escritorio (1200px a 1399px) */
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    /* Estilos para pantallas grandes de escritorio */
+    
+    body {
+        font-size: 26px;
+        background-color: green;
+        display: grid;
+        /* gap: 0.1px; */
+        grid-template: 
+            "navbar navbar navbar navbar navbar " 
+            "sobreMi sobreMi sobreMi imagenPerfil imagenPerfil"
+            "linksSociales linksSociales linksSociales linksSociales linksSociales" 
+            "textoDinamico textoDinamico textoDinamico textoDinamico textoDinamico" 
+            "categorias categorias categorias categorias categorias" 
+            "filtros filtros filtros filtros filtros " 
+            "projectos projectos projectos projectos projectos" 
+            "footer footer footer footer footer";
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 
+            50px /*navbar*/
+            auto /*sobreMi*/ /*imagenPerfil*/
+            auto /*linksSociales*/
+            auto /*textoDinamico*/
+            auto /*categorias*/
+            auto /*filtros*/
+            auto /*projectos*/
+            100px /*footer*/;
+        }
+        .navbar{
+            grid-area:navbar;
+            background-color: antiquewhite;
+            
+            
+
+            
+        }
+        
+        .main__sobreMi{
+            grid-area:sobreMi;
+            background-color: aqua;
+            width:100%;
+            
+        }
+        
+        .main__imagenPerfil{
+            grid-area:imagenPerfil;
+            background-color: black;
+            width: 100%;
+        }
+        
+        .main__linksSociales{
+            grid-area:linksSociales;
+            background-color:blue ;
+        }
+        
+        .main__textoDinamico{
+            grid-area: textoDinamico;
+            background-color: blueviolet;
+        }
+        
+        .main__categorias{
+            grid-area: categorias;
+            background-color: brown;
+        }
+        
+        .main__filtros{
+            grid-area:filtros;
+            background-color: green;
+        }
+        
+        .main__projectos{
+            grid-area:projectos;
+            background-color: orangered;
+        }
+        
+        .footer{
+            grid-area: footer;
+            background-color:yellow ;
+        }
+        
+        .footer__carruselLogo{
+            grid-area:carruselLogo;
+            background-color: pink ;
+        }
+  }
+  
+  /* Media query para pantallas muy grandes (1400px en adelante) */
+  @media (min-width: 1400px) {
+    /* Estilos para pantallas muy grandes */
+    
+
+    body {
+        font-size: 28px;
+        background-color:orange;
+        display: grid;
+        /* gap: 0.1px; */
+        grid-template: 
+            "navbar navbar navbar navbar navbar " 
+            "sobreMi sobreMi sobreMi imagenPerfil imagenPerfil"
+            "linksSociales linksSociales linksSociales linksSociales linksSociales" 
+            "textoDinamico textoDinamico textoDinamico textoDinamico textoDinamico" 
+            "categorias categorias categorias categorias categorias" 
+            "filtros filtros filtros filtros filtros " 
+            "projectos projectos projectos projectos projectos" 
+            "footer footer footer footer footer";
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 
+            50px /*navbar*/
+            auto /*sobreMi*/ /*imagenPerfil*/
+            auto /*linksSociales*/
+            auto /*textoDinamico*/
+            auto /*categorias*/
+            auto /*filtros*/
+            auto /*projectos*/
+            100px /*footer*/;
+        }
+        .navbar{
+            grid-area:navbar;
+            background-color: antiquewhite;
+            
+            
+
+            
+        }
+        
+        .main__sobreMi{
+            grid-area:sobreMi;
+            background-color: aqua;
+            width:100%;
+            
+        }
+        
+        .main__imagenPerfil{
+            grid-area:imagenPerfil;
+            background-color: black;
+            width: 100%;
+        }
+        
+        .main__linksSociales{
+            grid-area:linksSociales;
+            background-color:blue ;
+        }
+        
+        .main__textoDinamico{
+            grid-area: textoDinamico;
+            background-color: blueviolet;
+        }
+        
+        .main__categorias{
+            grid-area: categorias;
+            background-color: brown;
+        }
+        
+        .main__filtros{
+            grid-area:filtros;
+            background-color: green;
+        }
+        
+        .main__projectos{
+            grid-area:projectos;
+            background-color: orangered;
+        }
+        
+        .footer{
+            grid-area: footer;
+            background-color:yellow ;
+        }
+        
+        .footer__carruselLogo{
+            grid-area:carruselLogo;
+            background-color: pink ;
+        }
+  }
+
+
+
+  

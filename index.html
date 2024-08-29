@@ -1,160 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="¡Bienvenido a mi portafolio web! Soy Luis Israel Serrano Miranda, 
-    egresado de DuocUC en la carrera de analista programador computacional. aqui Explora mis proyectos y conoce
-     más sobre mí. Soy un programador con poca experiencia, entusiasmado por aprender y crecer profesionalmente. Encuéntrame en LinkedIn, Behance y GitHub, y descarga mi currículum vitae actualizado." 
-    />
+    <title>Luis Serrano Dev</title>
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/styles/index.css">
+    <!--iconos-->
     <script src="https://kit.fontawesome.com/64af136b72.js" crossorigin="anonymous"></script>
-    <title>Portafolio Luis Serrano</title>
-    
+    <!--Libreria Slick-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
-    <!--  <style>
-      iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border: none; 
-}|
-    </style> -->
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="assets/styles/animacionCarrusel.css">
+  </head>
+  <body>
+    <div class="contenedor__principal">
+      <header class="contenedor__nadvar"> 
+        <nav>
+          <div class="navbar__nav" id="navbar-container"></div>
+        </nav>
+      </header>
 
-    <style>
-     /*Inicio stylo segundo filtro */
-      
-      /*FIN stylo segundo filtro*/
-       
+        <section class="contenedor__sobre-mi">
+          <div id="sobreMi-container" class="main__sobreMi-textos"></div>
+        </section>
 
-  </style>
-</head>
+        <section class="contenedor__foto-perfil">
+          <img src="../assets/img/Imagem.png" class="imagen-perfil__header-image rounded-circle" alt="Mi Foto">
+          <p id="random-phrase" class="textoDinamico">b</p>
+          <div id="miLinksSociales-container" class="main__linksSociales__iconos">asd</div>
+        </section>
+        
+        <section class="contenedor__tegnologias">
+          <hr>
+          <div id="carrusel-mis-conocimientos"></div>
+          <div id="carrusel-mis-estudio"></div>
+          <!-- <div id="carrusel-a-futuro"></div> -->
+        </section>
+        
+        <section class="contenedor__proyectos-destacados">
+          <hr>
+          <div id="proyecyo1-container"></div>
+        </section>
 
-<body>
-
-  <header class="navbar">
-    <nav class="navbar__nav" id="navbar-container"></nav>
-  </header>
-
-  
-  <section id="sobreMi" class="main__sobreMi" >
-    <div id="sobreMi-container" class="main__sobreMi-textos"></div>
-  </section>
-
-  <section id="imagen-perfil" class="main__imagenPerfil">
-    <img src="../assets/img/perfil.png" class="imagen-perfil__header-image rounded-circle" alt="Mi Foto">
-  </section>
-
-  <section id="linksSociales" class="main__linksSociales">
-    <div id="miLinksSociales-container" class="main__linksSociales__iconos">asd</div>
-  </section>
-
-  <section id="textoDinamico" class="main__textoDinamico">
-    <p id="random-phrase">b</p>
-  </section>
-
-  <section id="categorias" class="main__categorias">
-    <h2>Mis Proyectos</h2>
-    
-    <div class="filter-container" id="filterContainer">
-      <div class="filter-option" onclick="toggleActive(this)">Programacion</div>
-      <div class="filter-option" onclick="toggleActive(this)">Diseño /ui</div>
-      
-  </div>
-  
-  <select class="filter-select" id="filterSelect" onchange="selectOption(this)">
-      <option value="">Seleccione una opción</option>
-      <option value="Opción 1">Programacion</option>
-      <option value="Opción 2">diseño ux/ui</option>
-  </select>
-  </section>
-
-  <section id="filtros" class="main__filtros">
-    <div class="multi-select-container">
-      <button class="btn btn-primary w-100" onclick="toggleDropdown()">Select Options</button>
-      <div class="multi-select-dropdown" id="multiSelectDropdown">
-          <div class="multi-select-option" onclick="toggleSelection(this, 'Option 1')">
-              Option 1
-              <span class="check-icon">✔️</span>
-          </div>
-          <div class="multi-select-option" onclick="toggleSelection(this, 'Option 2')">
-              Option 2
-              <span class="check-icon">✔️</span>
-          </div>
-          <div class="multi-select-option" onclick="toggleSelection(this, 'Option 3')">
-              Option 3
-              <span class="check-icon">✔️</span>
-          </div>
-          <div class="multi-select-option" onclick="toggleSelection(this, 'Option 4')">
-              Option 4
-              <span class="check-icon">✔️</span>
-          </div>
-          <div class="multi-select-option" onclick="toggleSelection(this, 'Option 5')">
-              Option 5
-              <span class="check-icon">✔️</span>
-          </div>
-      </div>
-  </div>
-  </section>
-
-  <section id="projectos" class="main__projectos">
-   <div id="proyecyo1-container"></div>
-  </section>
-
-  
-  
-
-  <footer class="footer">
-    <div class="footer__Iconos" id="iconosFooter-container">
+      <footer class="footer">
+        <p>footer</p>
+      </footer>
     </div>
-    <p>&copy;Luis Serrano Miranda</p>    
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script>
-    function toggleActive(element) {
-        element.classList.toggle('active');
-    }
-
-    function selectOption(select) {
-        const value = select.value;
-        const options = document.querySelectorAll('.filter-option');
-        options.forEach(option => {
-            option.classList.remove('active');
-            if (option.textContent === value) {
-                option.classList.add('active');
-            }
-        });
-    }
-
-    /*Inicio Segundo Filtro*/
-    function toggleDropdown() {
-        document.getElementById('multiSelectDropdown').classList.toggle('show');
-    }
-
-    function toggleSelection(element, option) {
-        element.classList.toggle('selected');
-        let selectedOptions = document.querySelectorAll('.multi-select-option.selected');
-        let selectedValues = Array.from(selectedOptions).map(el => el.textContent.trim());
-        console.log('Selected values:', selectedValues);
-    }
-
-    document.addEventListener('click', function(event) {
-        var isClickInside = document.querySelector('.multi-select-container').contains(event.target);
-        if (!isClickInside) {
-            document.getElementById('multiSelectDropdown').classList.remove('show');
-        }
-    });
-    /*Fin Segundo Filtro*/
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<!--Llamados Partials-->
-<script src="assets/js/functions/llamadoPartials.js"></script>
-</body>
-<script src="../assets/js/animations/animationIndex/animationEscritura.js"></script>  
-
+    <!--llamado partials ("componentes")-->
+    <script src="assets/js/functions/llamadoPartials.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--libreria  Slick-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!--animaciones-->
+    <script src="assets/js/animations/animationIndex/animationEscritura.js"></script> 
+    <script src="assets/js/animations/animationIndex/animationCarrusel1.js"></script>
+    <script src="assets/js/animations/animationIndex/animationCarrusel2.js"></script>
+    <script src="assets/js/animations/animationIndex/animationCarrusel3.js"></script>
+  </body>
 </html>

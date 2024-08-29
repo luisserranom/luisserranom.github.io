@@ -1,0 +1,23 @@
+@import url(colores.css);
+/* El contenedor principal del scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+    height: 20px; /* Alto del scrollbar (para scrollbars horizontales) */
+  }
+  
+  /* El fondo del scrollbar */
+  ::-webkit-scrollbar-track {
+    background: var(--color-secundario);  /* Color del fondo del scrollbar */
+  }
+  
+  /* La parte del scrollbar que se desplaza */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-principal);/* Color del scrollbar */
+    
+  }
+  
+  /* La parte del scrollbar cuando está en hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secundario);
+  }
+  

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card with Carousel</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card-custom {
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 28%;
+     /*  margin: auto; */
+    }
+    .icon-section {
+      text-align: center;
+      padding: 10px;
+    }
+    .icon-section i {
+      font-size: 1.5rem;
+      color: #6c757d;
+      margin: 0 10px;
+    }
+    .btn-section {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .btn-section .btn {
+      margin: 5px;
+    }
+    .description-section {
+      padding: 15px;
+      max-height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+    .description-section p {
+      margin: 0;
+    }
+    .read-more {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* Estilos para el modal más grande */
+    .modal-dialog {
+      max-width: 80%;
+      max-height: 80%;
+    }
+
+    /* Estilos para la X roja */
+    .modal-header .btn-close {
+      background-color: red;
+      border-radius: 50%;
+    }
+    .modal-header .btn-close:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <div class="card card-custom">
+    <!-- Carousel Section -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://via.placeholder.com/600x300" class="d-block w-100" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/600x300" class="d-block w-100" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/600x300" class="d-block w-100" alt="Image 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Icon Section -->
+    <div class="icon-section">
+      <i class="bi bi-star"></i>
+      <i class="bi bi-heart"></i>
+      <i class="bi bi-share"></i>
+    </div>
+
+    <!-- Button Section -->
+    <div class="btn-section">
+      <button class="btn btn-primary">repositorio</button>
+      <button class="btn btn-secondary">Host</button>
+      <button class="btn btn-success">Diseño</button>
+      <button class="btn btn-danger">demo</button>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description-section">
+      <h5 class="card-title">Card Title</h5>
+      <p class="card-text">
+        This is a description section. You can write a short description of
+        the content or purpose of this card here. It is designed to be flexible and can expand
+        with the amount of text you add. This is a description section. You can write a short description of
+        the content or purpose of this card here. It is designed to be flexible and can expand
+        with the amount of text you add.
+      </p>
+    </div>
+    
+    <!-- "Ver más" Button -->
+    <div class="read-more">
+      <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#descriptionModal">Ver más...</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="descriptionModal" tabindex="-1" aria-labelledby="descriptionModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="descriptionModalLabel">Descripción Completa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        This is a description section. You can write a short description of the content or purpose of this card here. It is designed to be flexible and can expand with the amount of text you add. This is a description section. You can write a short description of the content or purpose of this card here. It is designed to be flexible and can expand with the amount of text you add. This is a description section. You can write a short description of the content or purpose of this card here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
