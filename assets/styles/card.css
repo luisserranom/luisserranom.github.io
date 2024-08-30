@@ -59,7 +59,8 @@
   .btn-section .btn {
     margin: 5px;
     background-color: var(--color-terciario);
-    color: azure;
+    color: var(--color-letras);
+    
   }
 
   .custom-button-color {
@@ -73,12 +74,50 @@
     max-height: 155px;
     overflow: hidden;
     position: relative;
-    color: azure;
+    color: var(--color-letras);
+    font-family: var(--fuente-titulo);
+    font-weight: 900;
     
   }
+
+  .btn-section .btn{
+    font-family: var(--fuente-pixels);
+  }
+
+  .description-section h5 {
+    margin: 0;
+    color: var(--color-letras);
+    font-family: var(--fuente-pequena);
+    font-weight: 900;
+  }
+
   .description-section p {
     margin: 0;
-    color: azure;
+    color: var(--color-letras);
+    font-family: var(--fuente-pequena);
+    font-weight: 450;
+  }
+
+  .read-more .btn{
+    font-family: var(--fuente-pequena);
+  }
+
+  .modal-footer a{
+    font-family: var(--fuente-pixels);
+  }
+
+  .modal-title h5{
+    margin: 0;
+    color: var(--color-letras);
+    font-family: var(--fuente-pequena);
+    font-weight: 900;
+  }
+
+  .modal-body{
+    margin: 0;
+    color: var(--color-letras);
+    font-family: var(--fuente-pequena);
+    font-weight: 450;
   }
   .read-more {
     text-align: center;

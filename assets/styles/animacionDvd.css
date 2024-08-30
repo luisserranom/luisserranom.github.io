@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+  /*   overflow: hidden; */
+    background-color: rgb(255, 0, 0);
+}
+
+#dvdLogo {
+    position: absolute;
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+  

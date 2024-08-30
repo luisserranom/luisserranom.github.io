@@ -5,6 +5,7 @@
 @import url(card.css);
 @import url(footer.css);
 @import url(fuentes.css);
+
 *{
     padding: 0;
     margin: 0;
@@ -63,6 +64,8 @@ img{
     /* Nadvar */
     .contenedor__nadvar {
         grid-area: nadvar;
+        font-family: var(--fuente-pixels);
+        font-size: 110%;
         
     }
     
@@ -87,16 +90,25 @@ img{
         text-align: center;
     }
 
+    .contenedor__sobre-mi h1{
+        font-family: var(--fuente-titulo);
+        font-weight: 900;
+        font-size: 220%;
+    }
     .contenedor__sobre-mi p{
         margin: 0 auto; 
         width: 80%;
         margin-bottom: 3%;
+        font-family: var(--fuente-pequena);
+        font-weight: 530;
         
        
     }
     .contenedor__sobre-mi  b{
         margin-left: 12%;
-       color: var(--color-secundario);
+        color: var(--color-secundario);
+        font-family: var(--fuente-pixels);
+        font-size: 100%;
     }
     
     /* Foto de perfil */
@@ -119,9 +131,13 @@ img{
         margin-top: 6%;
     }
 
+    
+
     .textoDinamico{
         color: var(--color-letras);
         margin-top: 4%;
+        font-family: var(--fuente-pequena);
+        font-weight: 900;
     }
 
     .main__linksSociales__iconos{
@@ -160,8 +176,13 @@ img{
     }
 
     .contenedor__tegnologias h3{
+        font-family: var(--fuente-subTitulo);
+        font-weight: 600;
+        font-size: 165%;
         margin-top: 2%;
     }
+
+  
     
     /* Proyectos destacados */
     /* .contenedor__proyectos-destacados {
@@ -182,14 +203,19 @@ img{
         display: flex;
         flex-wrap:wrap; /* Permite que las tarjetas se envuelvan en la siguiente fila si no caben en una sola */
         justify-content: space-between; 
+        padding-top: 20px;
+        padding-bottom: 15px;
    
       }
+
+     
       
       .card-proyecto {
         text-align: center; /* Centra las tarjetas en el contenedor */
         width: calc(33.333% - 10px); /* Ajusta el ancho para tres tarjetas por fila con espacio entre ellas */
         margin-bottom: 10px
       }
+
     
     
     /* Footer */
@@ -201,6 +227,12 @@ img{
         justify-content: center;
         align-items: center;
         color: var(--color-letras);
+       padding-top: 25px;
+     }
+
+     footer img{
+        width: 4%;
+        margin-bottom: 5px;
      }
             
             
