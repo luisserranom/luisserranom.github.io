@@ -85,7 +85,7 @@ function cargarProyecto1(){
         .then(response => response.text())
         .then(data => {
             // Insertar el contenido del encabezado en el elemento con el id 
-            document.getElementById('proyecyo1-container').innerHTML = data;
+            document.getElementById('proyecto1-container').innerHTML = data;
         })
         .catch(error => console.error('Error al cargar proyecto1:', error));
     
@@ -93,6 +93,34 @@ function cargarProyecto1(){
 
 document.addEventListener('DOMContentLoaded',cargarProyecto1);
 
+
+function cargarProyecto2(){
+
+    fetch('../../../partials/secciones/proyectos/proyecto2.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('proyecto2-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar proyecto2:', error));
+    
+}
+
+document.addEventListener('DOMContentLoaded',cargarProyecto2);
+
+function cargarProyecto3(){
+
+    fetch('../../../partials/secciones/proyectos/proyecto3.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('proyecto3-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar proyecto3:', error));
+    
+}
+
+document.addEventListener('DOMContentLoaded',cargarProyecto3);
 
 
 function cargarIconosFooter(){
@@ -150,3 +178,17 @@ function cargarCarrusel3(){
 }
 
 document.addEventListener('DOMContentLoaded',cargarCarrusel3);
+
+
+function cargarFooter(){
+    fetch('../../../partials/estructuraBasica/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el footer:', error));
+    
+}
+
+document.addEventListener('DOMContentLoaded',cargarFooter);

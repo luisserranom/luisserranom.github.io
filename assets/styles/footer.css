@@ -1,0 +1,20 @@
+@import url(colores.css);
+
+
+.iconos{
+    font-size: 40px;
+    display: flex;
+    gap: 20px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.despedida{
+    background-color: var(--color-principal);
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

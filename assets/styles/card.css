@@ -2,13 +2,35 @@
 .card-custom {
     border-radius: 10px;
     overflow: hidden;
-    max-width: 33%;
-    /* background-color: var(--color-terciario); */
+   /*  max-width: 33%; */
+   min-height: 579px;
+   max-height: 580px;
     background-color: var(--color-secundario);
-   /*  margin: auto; */
+    /* margin: auto; */
+    
+  }
+  .card {
+    width: 100%; /* Ajusta este valor según el tamaño que desees */
+    margin: 0; /* Espacio entre las tarjetas */
+    display: inline-block; /* Asegura que las tarjetas se alineen horizontalmente */
+    vertical-align: top; /* Alinea las tarjetas a la parte superior */
+  }
+ 
+  .card-title {
+    font-size: 1.2rem;
   }
 
- 
+  .card-text {
+    font-size: 0.9rem; 
+  }
+
+  .carousel-item img{
+    min-height: 234px;
+    max-height: 235px;
+    object-fit: cover;
+  }
+
+
   .icon-section {
     text-align: center;
     padding: 10px;
@@ -99,3 +121,23 @@
     color: var(--color-letras);
     
   }
+
+
+  .icon-section {
+    text-align: center;
+    padding: 10px;
+}
+
+.icon-section i,
+.icon-section .custom-icon {
+    font-size: 1.5rem;
+    color: var(--color-terciario);
+    margin: 0 10px;
+    vertical-align: middle; /* Alinea verticalmente los íconos */
+}
+
+.icon-section .custom-icon {
+    width: 1.5rem; /* Ajusta el tamaño del SVG para que coincida con los íconos */
+    height: 1.5rem;
+    fill: var(--color-terciario); /* Aplica el color al SVG */
+}

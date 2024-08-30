@@ -3,7 +3,10 @@ let phrases = [
     "#FanaticoDeAprender",
     "#sinJuniorNoHaySenior",
     "#DeJuniorASenior",
-    "#AprenderParaCrecer"
+    "#AprenderParaCrecer",
+    "#CuriosidadSinLímites",
+    "#AprenderEsAvanzar",
+    "#CrecimientoContinuo"
   ];
 
   function getRandomPhrase() {

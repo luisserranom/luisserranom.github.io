@@ -1,23 +1,45 @@
 <div class="container my-5">
   <div class="card card-custom">
     <!-- Carousel Section -->
-    <div id="carouselExample" class="carousel slide">
+    <div id="carouselExample1" class="carousel slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://via.placeholder.com/600x300" class="d-block w-100" alt="Image 1">
+          <img
+            src="https://via.placeholder.com/600x300"
+            class="d-block w-100"
+            alt="Image 1"
+          />
         </div>
         <div class="carousel-item">
-          <img src="https://via.placeholder.com/600x300" class="d-block w-100" alt="Image 2">
+          <img
+            src="https://via.placeholder.com/600x300"
+            class="d-block w-100"
+            alt="Image 2"
+          />
         </div>
         <div class="carousel-item">
-          <img src="https://via.placeholder.com/600x300" class="d-block w-100" alt="Image 3">
+          <img
+            src="https://via.placeholder.com/600x300"
+            class="d-block w-100"
+            alt="Image 3"
+          />
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample1"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample1"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -25,65 +47,78 @@
 
     <!-- Icon Section -->
     <div class="icon-section">
-        <i class="fa-brands fa-js"></i>
-        <i class="fa-brands fa-html5"></i>
-        <i class="fa-brands fa-css3"></i>
-        <i class="fa-brands fa-bootstrap"></i>
-        <i class="fa-brands fa-git-alt"></i>
-        <i class="fa-brands fa-github-alt"></i>
+      <i class="fa-brands fa-js"></i>
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3"></i>
+      <i class="fa-brands fa-bootstrap"></i>
+      <i class="fa-brands fa-git-alt"></i>
+      <i class="fa-brands fa-github-alt"></i>
     </div>
 
     <!-- Button Section -->
     <div class="btn-section">
-        <button class="btn">
-            <i class="fa-brands fa-github"></i>
-            Repositorio
-        </button>
-
-        <button class="btn">
-            <i class="fa-brands fa-github"></i>
-            Sitio Web
-        </button>
-      <!-- <button class="btn btn-success">Diseño</button> -->
-      <!-- <button class="btn btn-danger">demo</button> -->
+      <a href="https://github.com/luisserranom/Desafio-ONE-Encriptador-" target="_blank" class="btn">
+        <i class="fa-brands fa-github"></i> Repositorio
+      </a>
+      <a href="https://desafio-one-encriptador.vercel.app/" target="_blank" class="btn">
+        <i class="fa-solid fa-globe"></i> SitioWeb
+      </a>
+     <!--  <button class="btn btn-success">Diseño</button> 
+      <button class="btn btn-danger">demo</button>  -->
     </div>
 
     <!-- Description Section -->
     <div class="description-section">
       <h5 class="card-title">Portafolio Web</h5>
       <p class="card-text">
-        En este proyecto de portafolio web, utilicé JavaScript, HTML, CSS (Grid y Flexbox)
-        y Bootstrap 5 solo para la barra de navegación y las tarjetas. Está alojado en GitHub
-        Pages, utilizando Git y GitHub para el control de versiones. Implementé partials con 
-        funciones JavaScript para un código más ordenado y algunos pequeños conceptos o tips
-        básicos de SEO para mejorar la visibilidad. También optimicé el rendimiento con un
-        sprite de imágenes. Para el carrusel o slider, usé una biblioteca jQuery llamada Slick,
-        que permite crear carruseles responsivos con facilidad.
-        La implementación del modal para la sección "Ver más..." 
-        incluye un diseño ajustable en tamaño, con un botón de cierre 
-        personalizado en rojo para mejorar la visibilidad y la experiencia
-        del usuario. Además, he añadido media queries para asegurar que el 
+        En este proyecto de portafolio web, utilicé JavaScript, HTML, CSS
+        (Grid y Flexbox) y Bootstrap 5 solo para la barra de navegación y
+        las tarjetas. Está alojado en GitHub Pages, utilizando Git y GitHub
+        para el control de versiones. Implementé partials con funciones
+        JavaScript para un código más ordenado y algunos pequeños conceptos
+        o tips básicos de SEO para mejorar la visibilidad. También optimicé
+        el rendimiento con un sprite de imágenes. Para el carrusel o slider,
+        usé una biblioteca jQuery llamada Slick, que permite crear carruseles
+        responsivos con facilidad. La implementación del modal para la sección
+        "Ver más..." incluye un diseño ajustable en tamaño, con un botón de
+        cierre personalizado en rojo para mejorar la visibilidad y la experiencia
+        del usuario. Además, he añadido media queries para asegurar que el
         diseño sea completamente responsivo y se ajuste bien a diferentes tamaños
         de pantalla.
       </p>
     </div>
-    
+
     <!-- "Ver más" Button -->
     <div class="read-more">
-        <button class="btn btn-link custom-button-color" data-bs-toggle="modal" data-bs-target="#descriptionModal">
-            Ver más aqui!! ...
-        </button>
+      <button
+        class="btn btn-link custom-button-color"
+        data-bs-toggle="modal"
+        data-bs-target="#descriptionModal"
+      >
+        Ver más aqui!! ...
+      </button>
     </div>
   </div>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="descriptionModal" tabindex="-1" aria-labelledby="descriptionModalLabel" aria-hidden="true">
+<div
+  class="modal fade"
+  id="descriptionModal"
+  tabindex="-1"
+  aria-labelledby="descriptionModalLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="descriptionModalLabel">Portafolio Web</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="modal-iconos-tegnologias">
         <i class="fa-brands fa-js"></i>
@@ -94,35 +129,29 @@
         <i class="fa-brands fa-github-alt"></i>
       </div>
       <div class="modal-body">
-        En este proyecto de portafolio web, utilicé JavaScript, HTML, CSS (Grid y Flexbox)
-        y Bootstrap 5 solo para la barra de navegación y las tarjetas. Está alojado en GitHub
-        Pages, utilizando Git y GitHub para el control de versiones. Implementé partials con 
-        funciones JavaScript para un código más ordenado y algunos pequeños conceptos o tips
-        básicos de SEO para mejorar la visibilidad. También optimicé el rendimiento con un
-        sprite de imágenes. Para el carrusel o slider, usé una biblioteca jQuery llamada Slick,
-        que permite crear carruseles responsivos con facilidad.
-        La implementación del modal para la sección "Ver más..." 
-        incluye un diseño ajustable en tamaño, con un botón de cierre 
-        personalizado en rojo para mejorar la visibilidad y la experiencia
-        del usuario. Además, he añadido media queries para asegurar que el 
+        En este proyecto de portafolio web, utilicé JavaScript, HTML, CSS
+        (Grid y Flexbox) y Bootstrap 5 solo para la barra de navegación y
+        las tarjetas. Está alojado en GitHub Pages, utilizando Git y GitHub
+        para el control de versiones. Implementé partials con funciones
+        JavaScript para un código más ordenado y algunos pequeños conceptos
+        o tips básicos de SEO para mejorar la visibilidad. También optimicé
+        el rendimiento con un sprite de imágenes. Para el carrusel o slider,
+        usé una biblioteca jQuery llamada Slick, que permite crear carruseles
+        responsivos con facilidad. La implementación del modal para la sección
+        "Ver más..." incluye un diseño ajustable en tamaño, con un botón de
+        cierre personalizado en rojo para mejorar la visibilidad y la experiencia
+        del usuario. Además, he añadido media queries para asegurar que el
         diseño sea completamente responsivo y se ajuste bien a diferentes tamaños
         de pantalla.
       </div>
       <div class="modal-footer">
-        <button class="btn">
-          <i class="fa-brands fa-github"></i>
-            Repositorio
-        </button>
-
-        <button class="btn">
-            <i class="fa-brands fa-github"></i>
-            Sitio Web
-        </button>
-        
+        <a href="https://github.com/luisserranom/Desafio-ONE-Encriptador-" target="_blank" class="btn">
+          <i class="fa-brands fa-github"></i> Repositorio
+        </a>
+        <a href="https://desafio-one-encriptador.vercel.app/" target="_blank" class="btn">
+          <i class="fa-solid fa-globe"></i> SitioWeb
+        </a>
       </div>
     </div>
   </div>
 </div>
-
-
-

@@ -3,6 +3,7 @@
 @import url(animacionCarrusel.css);
 @import url(scrollbar.css);
 @import url(card.css);
+@import url(footer.css);
 *{
     padding: 0;
     margin: 0;
@@ -162,16 +163,48 @@ img{
     }
     
     /* Proyectos destacados */
+    /* .contenedor__proyectos-destacados {
+        grid-area: proyectos-destacados;
+        background: var(--color-principal);
+        
+        
+        
+        
+    }
+    .card-proyecto {
+        
+    }  */
+
     .contenedor__proyectos-destacados {
         grid-area: proyectos-destacados;
         background: var(--color-principal);
-    }
+        display: flex;
+        flex-wrap:wrap; /* Permite que las tarjetas se envuelvan en la siguiente fila si no caben en una sola */
+        justify-content: space-between; 
+   
+      }
+      
+      .card-proyecto {
+        text-align: center; /* Centra las tarjetas en el contenedor */
+        width: calc(33.333% - 10px); /* Ajusta el ancho para tres tarjetas por fila con espacio entre ellas */
+        margin-bottom: 10px
+      }
+    
     
     /* Footer */
-    .footer {
+    footer {
         grid-area: footer;
-        background: rgb(255, 102, 0);
-    }
+        background-color: var(--color-secundario);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-letras);
+     }
+            
+            
+        
+    
     
     
 }
