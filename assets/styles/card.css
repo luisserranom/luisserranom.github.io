@@ -3,18 +3,30 @@
     border-radius: 10px;
     overflow: hidden;
    /*  max-width: 33%; */
-   min-height: 579px;
+   min-height: 5px;
    max-height: 580px;
     background-color: var(--color-secundario);
     /* margin: auto; */
     
   }
-  .card {
-    width: 100%; /* Ajusta este valor según el tamaño que desees */
-    margin: 0; /* Espacio entre las tarjetas */
-    display: inline-block; /* Asegura que las tarjetas se alineen horizontalmente */
-    vertical-align: top; /* Alinea las tarjetas a la parte superior */
-  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Para distribuir el espacio entre las tarjetas */
+    align-items: start; /* Alinea las tarjetas al inicio, puedes cambiar a center o stretch */
+}
+  /* .card { */
+    /* width: 100%; */ /* Ajusta este valor según el tamaño que desees */
+   /*  margin: 0; */ /* Espacio entre las tarjetas */
+    /* display: inline-block; */ /* Asegura que las tarjetas se alineen horizontalmente */
+    /* vertical-align: top; */ /* Alinea las tarjetas a la parte superior */
+    
+ /*  } */
+
+ .card {
+  flex: 1 1 30%; /* Las tarjetas ocuparán el 30% del ancho del contenedor, ajusta según tu necesidad */
+  margin: 10px; /* Margen entre tarjetas */
+}
  
   .card-title {
     font-size: 1.2rem;
