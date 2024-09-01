@@ -16,15 +16,7 @@ document.addEventListener('DOMContentLoaded', cargarNavbar);
 //para llamar el partials <nav id="navbar-container"></nav>
 
 
-function cargarFiltros(){
-    fetch("../../../partials/secciones/index/filtroProyecto.html")
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('filtros-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error al cargar los filtros:', error));
-}
-document.addEventListener('DOMContentLoaded', cargarFiltros);
+
 
 
 function cargarSobreMi(){
@@ -38,18 +30,7 @@ function cargarSobreMi(){
 }
 document.addEventListener('DOMContentLoaded',cargarSobreMi);
 
-function cargarTextoDinamico(){
 
-    fetch('../../../partials/secciones/index/textoDinamico.html')
-        .then(response => response.text())
-        .then(data => {
-            // Insertar el contenido del encabezado en el elemento con el id 
-            document.getElementById('textoDinamico-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error al cargar texto dinamico:', error));
-}
-
-document.addEventListener('DOMContentLoaded',cargarTextoDinamico);
 
 function cargarMiLinksSociales(){
 
@@ -65,76 +46,14 @@ function cargarMiLinksSociales(){
 document.addEventListener('DOMContentLoaded',cargarMiLinksSociales);
 
 
-function cargarCategorias(){
-    
-    fetch('../../../partials/secciones/index/categoria.html')
-        .then(response => response.text())
-        .then(data => {
-            // Insertar el contenido del encabezado en el elemento con el id 
-            document.getElementById('categoria-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error al cargar categoria:', error));
-}
-
-document.addEventListener('DOMContentLoaded',cargarCategorias);
 
 
-function cargarProyecto1(){
-
-    fetch('../../../partials/secciones/proyectos/proyecto1.html')
-        .then(response => response.text())
-        .then(data => {
-            // Insertar el contenido del encabezado en el elemento con el id 
-            document.getElementById('proyecto1-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error al cargar proyecto1:', error));
-    
-}
-
-document.addEventListener('DOMContentLoaded',cargarProyecto1);
 
 
-function cargarProyecto2(){
-
-    fetch('../../../partials/secciones/proyectos/proyecto2.html')
-        .then(response => response.text())
-        .then(data => {
-            // Insertar el contenido del encabezado en el elemento con el id 
-            document.getElementById('proyecto2-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error al cargar proyecto2:', error));
-    
-}
-
-document.addEventListener('DOMContentLoaded',cargarProyecto2);
-
-function cargarProyecto3(){
-
-    fetch('../../../partials/secciones/proyectos/proyecto3.html')
-        .then(response => response.text())
-        .then(data => {
-            // Insertar el contenido del encabezado en el elemento con el id 
-            document.getElementById('proyecto3-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error al cargar proyecto3:', error));
-    
-}
-
-document.addEventListener('DOMContentLoaded',cargarProyecto3);
 
 
-function cargarIconosFooter(){
-    fetch('../../../partials/secciones/index/iconosFooter.html')
-        .then(response => response.text())
-        .then(data => {
-            // Insertar el contenido del encabezado en el elemento con el id 
-            document.getElementById('iconosFooter-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error al cargar los iconos footer:', error));
-    
-}
 
-document.addEventListener('DOMContentLoaded',cargarIconosFooter);
+
 
 
 //llamado a carrusel 
@@ -166,7 +85,7 @@ function cargarCarrusel2(){
 
 document.addEventListener('DOMContentLoaded',cargarCarrusel2);
 
-function cargarCarrusel3(){
+/* function cargarCarrusel3(){
     fetch('../../../partials/secciones/index/carrusel3.html')
         .then(response => response.text())
         .then(data => {
@@ -175,10 +94,10 @@ function cargarCarrusel3(){
         })
         .catch(error => console.error('Error al cargar el carrusel3:', error));
     
-}
+} */
 
-document.addEventListener('DOMContentLoaded',cargarCarrusel3);
-
+/* document.addEventListener('DOMContentLoaded',cargarCarrusel3);
+ */
 
 function cargarFooter(){
     fetch('../../../partials/estructuraBasica/footer.html')
@@ -192,3 +111,5 @@ function cargarFooter(){
 }
 
 document.addEventListener('DOMContentLoaded',cargarFooter);
+
+
