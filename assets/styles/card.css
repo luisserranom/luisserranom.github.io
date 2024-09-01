@@ -99,7 +99,10 @@
   }
 
   .read-more .btn{
-    font-family: var(--fuente-pequena);
+    font-family: var(--fuente-pixels);
+    margin: 5px;
+    background-color: var(--color-terciario);
+    color: var(--color-letras);
   }
 
   .modal-footer a{

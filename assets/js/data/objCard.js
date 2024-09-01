@@ -247,8 +247,7 @@ const card = [
                 </a>
                 `,
   },
-    
-    
+  
 ];
 
 for (const cards of card) {
@@ -289,8 +288,8 @@ for (const cards of card) {
     </div>
 
     <div class="read-more">
-      <button class="btn btn-link custom-button-color" data-bs-toggle="modal" data-bs-target="${cards.nombreModal}">
-        Ver más aqui!! ...
+      <button class="btn" data-bs-toggle="modal" data-bs-target="${cards.nombreModal}">
+        Ver más aqui!
       </button>
     </div>
   </div>
