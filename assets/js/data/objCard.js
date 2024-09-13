@@ -222,7 +222,7 @@ const card = [
                   ,
       
       btnsCards: `
-                  <<a href="https://github.com/luisserranom/portafolioEjemploONE" target="_blank" class="btn">
+                  <a href="https://github.com/luisserranom/portafolioEjemploONE" target="_blank" class="btn">
                     <i class="fa-brands fa-github"></i> Repositorio
                   </a>
                 `
