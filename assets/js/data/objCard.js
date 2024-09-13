@@ -23,23 +23,37 @@ const card = [
         imagenes: `
                     <div class="carousel-item active">
                       <img
-                        src="https://via.placeholder.com/600x300"
+                        src="../../../assets/img/portafoliov1.1.png"
                         class="d-block w-100"
                         alt="Image 1"
                       />
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="https://via.placeholder.com/600x300"
+                        src="../../../assets/img/portafoliov1.2.png"
                         class="d-block w-100"
                         alt="Image 2"
                       />
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="https://via.placeholder.com/600x300"
+                        src="../../../assets/img/portafoliov1.3.png"
                         class="d-block w-100"
                         alt="Image 3"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../../../assets/img/portafoliov1.4.png"
+                        class="d-block w-100"
+                        alt="Image 4"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../../../assets/img/portafoliov1.5.png"
+                        class="d-block w-100"
+                        alt="Image 5"
                       />
                     </div>`
                     ,
@@ -57,6 +71,8 @@ const card = [
                           <i class="fa-brands fa-bootstrap"></i>
                           <i class="fa-brands fa-git-alt"></i>
                           <i class="fa-brands fa-github-alt"></i>`
+                          
+                          
                         ,
         iconosModals: ` <i class="fa-brands fa-js"></i>
                         <i class="fa-brands fa-html5"></i>
@@ -100,6 +116,12 @@ const card = [
                         src="../../../assets/img/proyectoEncriptador3.png"
                         class="d-block w-100"
                         alt="Image 1"
+                         style="
+                          min-height: 234px;
+                          max-height: 235px;
+                          object-fit: cover;
+                        "
+                      />
                         
                       />
                     </div>
@@ -367,6 +389,88 @@ const card = [
               </a>
               `,
 },
+//card6
+{
+  id: 6,
+  titulo: "Proyecto integrado Generation Chile ForPets.",
+  descripcion: `Este proyecto, desarrollado como parte del programa Generation Chile, 
+                gestiona la información de mascotas permitiendo el registro de datos generales y médicos. 
+                Incluye un mapa interactivo con puntos de interés como tiendas y veterinarios, y un sistema 
+                de alertas para mascotas perdidas. Utilizando la metodología ágil Scrum y un tablero Kanban para
+                la gestión del proyecto, se modeló y pobló la base de datos, se creó el frontend con Bootstrap, HTML,
+                CSS y JavaScript, y se desarrolló el backend con Java y Spring Boot.
+    `,
+  imagenes: `
+              <div class="carousel-item active">
+                <img
+                  src="../../../assets/img/forpet1.png"
+                  class="d-block w-100"
+                  alt="Image 1"
+                  
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../../assets/img/forpet2.png"
+                  class="d-block w-100"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../../assets/img/forpet3.png"
+                  class="d-block w-100"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../../assets/img/forpet4.png"
+                  class="d-block w-100"
+                  alt="Image 2"
+                />
+              </div>
+              </div>
+              `
+              ,
+  
+  btnsCards: `
+              <a href="https://github.com/luisserranom/ForPets" target="_blank" class="btn">
+                <i class="fa-brands fa-github"></i> Repositorio
+              </a>
+              
+            `
+            ,
+  iconosCarrusel: `   
+                      <i class="fa-brands fa-java"></i>
+                      <i class="fa-brands fa-js"></i>
+                      <i class="fa-brands fa-html5"></i>
+                      <i class="fa-brands fa-css3"></i>
+                      <i class="fa-brands fa-git-alt"></i>
+                      <i class="fa-brands fa-github-alt"></i>
+                      <i class="fa-brands fa-bootstrap"></i>
+                      <i class="fa-brands fa-js"></i>
+                  `
+                  ,
+  iconosModals: ` 
+                      <i class="fa-brands fa-java"></i>
+                      <i class="fa-brands fa-js"></i>
+                      <i class="fa-brands fa-html5"></i>
+                      <i class="fa-brands fa-css3"></i>
+                      <i class="fa-brands fa-git-alt"></i>
+                      <i class="fa-brands fa-github-alt"></i>
+                      <i class="fa-brands fa-bootstrap"></i>
+                      <i class="fa-brands fa-js"></i>
+            `
+            ,
+  btnsModal:` 
+            <a href="https://github.com/luisserranom/ForPets" target="_blank" class="btn">
+              <i class="fa-brands fa-github"></i> Repositorio
+            </a>
+            
+            `,
+ 
+},
 ];
 
 for (const cards of card) {
@@ -435,6 +539,10 @@ for (const cards of card) {
   </div>
 </div>
     </div>
+
+
+    
+
     `;
 }
 
