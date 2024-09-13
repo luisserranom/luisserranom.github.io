@@ -1,6 +1,8 @@
+//
 let numeroContador = 0;
 let html = "";
 const card = [
+    //card1
     {
         id: 1,
         titulo: "Portafolio Web",
@@ -72,6 +74,7 @@ const card = [
         
         
     },
+    //card2
     {
         id: 2,
         titulo: "Challenger ONE encriptador.",
@@ -160,7 +163,7 @@ const card = [
                             `
                         ,
         iconosModals: ` 
-        <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-js"></i>
                             <i class="fa-brands fa-html5"></i>
                             <i class="fa-brands fa-css3"></i>
                             <i class="fa-brands fa-git-alt"></i>
@@ -190,6 +193,7 @@ const card = [
                       <i class="fa-solid fa-globe"></i> SitioWeb
                     </a>`,
     },
+    //card3
     {
       id: 3,
       titulo: "Portafolio programa ONE.",
@@ -247,7 +251,122 @@ const card = [
                 </a>
                 `,
   },
-  
+  //card4
+  {
+    id: 4,
+    titulo: "PokeApi con Fetch Simple en JS Vanilla.",
+    descripcion: `Este proyecto consiste en una aplicación simple desarrollada para practicar 
+      y comprender el consumo de una API utilizando JavaScript vanilla. El proyecto fue realizado
+      como parte de un tutorial en YouTube, cuyo propósito era enseñar cómo interactuar con la PokeAPI, 
+      una API que provee información detallada sobre Pokémon.
+      Objetivo El objetivo principal de este proyecto fue familiarizarme con el uso de la función fetch() 
+      en JavaScript para realizar peticiones HTTP y manejar las respuestas obtenidas desde una API externa. Además,
+      fue una excelente oportunidad para reforzar conceptos clave como la manipulación del DOM y el trabajo con 
+      datos en formato JSON.
+      `,
+    imagenes: `
+                <div class="carousel-item active">
+                  <img
+                    src="../../../assets/img/pokeapi1.png"
+                    class="d-block w-100"
+                    alt="Image 1"
+                    
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../../../assets/img/pokeapi2.png"
+                    alt="Image 2"
+                  />
+                </div>
+                `
+                ,
+    
+    btnsCards: `
+                <a href="https://github.com/luisserranom/PokeApiSimpleJSVanilla" target="_blank" class="btn">
+                  <i class="fa-brands fa-github"></i> Repositorio
+                </a>
+              `
+              ,
+    iconosCarrusel: `   
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3"></i>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <i class="fa-brands fa-github-alt"></i>
+                    `
+                    ,
+    iconosModals: ` 
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3"></i>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <i class="fa-brands fa-github-alt"></i>
+              `
+              ,
+    btnsModal:` 
+              <a href="https://github.com/luisserranom/PokeApiSimpleJSVanilla" target="_blank" class="btn">
+                <i class="fa-brands fa-github"></i> Repositorio
+              </a>
+              `,
+},
+   //card5
+   {
+    id: 5,
+    titulo: "CRUD Basico con array en js.",
+    descripcion: `Este proyecto consiste en una aplicación simple para la gestión de empleados, donde se implementa
+      la funcionalidad de crear, leer, actualizar y eliminar (CRUD) información de empleados. Los datos que se manejan 
+      son el nombre y el puesto de cada empleado.
+      Objetivo El objetivo principal de este proyecto fue poner en práctica las operaciones básicas de un CRUD, }
+      utilizando JavaScript vanilla para manejar los datos en la interfaz, además de HTML y CSS para la estructura y el
+       diseño de la aplicación.
+      `,
+    imagenes: `
+                <div class="carousel-item active">
+                  <img
+                    src="../../../assets/img/CRUD2.png"
+                    class="d-block w-100"
+                    alt="Image 1"
+                    
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../../../assets/img/CRUD1.png"
+                    alt="Image 2"
+                  />
+                </div>
+                `
+                ,
+    
+    btnsCards: `
+                <a href="https://github.com/luisserranom/CRUDJSVanillaConArray" target="_blank" class="btn">
+                  <i class="fa-brands fa-github"></i> Repositorio
+                </a>
+              `
+              ,
+    iconosCarrusel: `   
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3"></i>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <i class="fa-brands fa-github-alt"></i>
+                    `
+                    ,
+    iconosModals: ` 
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3"></i>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <i class="fa-brands fa-github-alt"></i>
+              `
+              ,
+    btnsModal:` 
+              <a href="https://github.com/luisserranom/CRUDJSVanillaConArray" target="_blank" class="btn">
+                <i class="fa-brands fa-github"></i> Repositorio
+              </a>
+              `,
+},
 ];
 
 for (const cards of card) {

@@ -113,3 +113,17 @@ function cargarFooter(){
 document.addEventListener('DOMContentLoaded',cargarFooter);
 
 
+function cargarExperiencias(){
+    fetch('../../../partials/secciones/index/experiencia.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insertar el contenido del encabezado en el elemento con el id 
+            document.getElementById('experiencia').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar la experiencia:', error));
+    
+}
+
+document.addEventListener('DOMContentLoaded',cargarExperiencias);
+
+

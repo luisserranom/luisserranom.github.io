@@ -5,6 +5,8 @@
 @import url(card.css);
 @import url(footer.css);
 @import url(fuentes.css);
+@import url(experiencia.css);
+@import url(modalCV.css);
 
 *{
     padding: 0;
@@ -58,6 +60,7 @@ img{
             "sobre-mi sobre-mi foto-perfil" 
             "tegnologias tegnologias tegnologias"
             "proyectos-destacados proyectos-destacados proyectos-destacados"
+            "experiencias experiencias experiencias"
             "footer footer footer";
     }
     
@@ -150,9 +153,17 @@ img{
         text-align: center;
     }
 
-    .main__linksSociales__iconos i {
+    .main__linksSociales__iconos a {
         margin-right: 40px;
         font-size: 240%;
+        color: var(--color-secundario);
+        }
+
+        .main__linksSociales__iconos button {
+            margin-right: 40px;
+            font-size: 240%;
+            background-color: transparent;
+            }
         
     }
 
@@ -215,7 +226,11 @@ img{
         width: calc(33.333% - 10px); /* Ajusta el ancho para tres tarjetas por fila con espacio entre ellas */
         margin-bottom: 10px
       }
-
+    /* experiencias*/
+    .contenedor__experiencia{
+        grid-area: experiencias;
+        background-color: var(--color-principal);
+    }
     
     
     /* Footer */

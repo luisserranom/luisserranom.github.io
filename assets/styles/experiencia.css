@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    overflow-x: hidden;
+    
+}
+
+.container-esperiencia {
+	width: 60%;
+    max-width: 100%; 
+    padding: 20px; 
+	 /* Limitar el ancho máximo */
+	 /* Ajustar el padding para más separación */
+    /* background-color: var(--color-principal); */
+    
+}
+h2{
+    font-family: var(--fuente-pixels);
+}
+
+main.row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 40px; /* Aumentar el espacio entre las columnas */
+    /* background-color: var(--color-principal); */
+}
+
+.col header.title {
+	font-family: helvetica;
+	color: var(--color-secundario);
+	padding: 0px 0px 20px 0px;
+	text-align: center; /* Centrar el título */
+    /* background-color: var(--color-principal); */
+}
+
+.col .contents {
+	padding: 0px 20px; /* Ajustar el padding interno */
+	border-left: 2px solid #bababa;
+    
+}
+
+.col .contents .box {
+	position: relative;
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	/* background-color: var(--color-principal); */
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 20px;
+    
+}
+
+.col .contents .box:hover {
+	box-shadow: 0px 3px 12px 0px var(--color-secundario/*  */);
+	border: 1px solid transparent;
+}
+
+.col .contents .box::before {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: var(--color-secundario);
+	border: 2px solid white;
+}
+
+.box h4 {
+	position: relative;
+	color: var(--color-secundario);
+    font-family: var(--fuente-titulo);
+}
+
+.box h3 {
+	font-size: 19px;
+	padding: 10px 0px 6px;
+	font-family: helvetica;
+	color: #668;
+    font-family: var(--fuente-pixels);
+}
+
+.box p {
+	line-height: 1.2;
+	color: var(--color-letras);
+	font-size: 17px;
+    font-family: var(--fuente-pequeña);
+}
+
+/* Media queries para móviles */
+@media (max-width: 768px) {
+	main.row {
+		grid-template-columns: 1fr;
+	}
+
+	.row .col:nth-child(2) {
+		margin-top: 30px;
+	}
+}
