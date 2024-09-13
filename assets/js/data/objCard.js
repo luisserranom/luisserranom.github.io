@@ -430,7 +430,6 @@ const card = [
                   alt="Image 2"
                 />
               </div>
-              </div>
               `
               ,
   
